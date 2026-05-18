@@ -1,4 +1,4 @@
-About xformers-feedstock
+About xformers-feedstock (Build for nv jetson thor)
 ========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xformers-feedstock/blob/main/LICENSE.txt)
