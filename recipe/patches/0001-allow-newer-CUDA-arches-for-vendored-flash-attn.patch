@@ -16,7 +16,7 @@ index 072c98c6..40d1bd3b 100644
          assert match is not None, f"Invalid sm version: {arch}"
          num = 10 * int(match.group("major")) + int(match.group("minor"))
 -        if num not in [80, 90]:  # only support Sm80/Sm90
-+        if num not in [80, 89, 90, 100, 120]:
++        if num not in [80, 89, 90, 100, 120, 110]:
              continue
          suffix = match.group("suffix")
          nvcc_archs_flags.append(
