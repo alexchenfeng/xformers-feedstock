@@ -6,7 +6,7 @@ set -ex
 if [[ ${cuda_compiler_version} != "None" ]]; then
     if [[ ${cuda_compiler_version} == 12.9 || ${cuda_compiler_version} == 13.0 ]]; then
         # leave out 9.0 due to https://github.com/conda-forge/cuda-nvcc-feedstock/issues/86
-        export TORCH_CUDA_ARCH_LIST="11.0"
+        export TORCH_CUDA_ARCH_LIST="11.0;8.7"
     else
         echo "Unsupported CUDA compiler version. Edit build.sh to add target CUDA archs."
         exit 1
